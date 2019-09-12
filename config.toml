@@ -1,0 +1,42 @@
+theme = "smalltheme"
+title = "MySmalltheme"
+baseURL = "http://example.com"  #.Site.BaseURL
+
+
+# .Site.Menus.main
+[[menu.main]]                        # config your menu  # 配置菜单
+  name = "首页"
+  weight = 10
+  identifier = "home"
+  url = "/"
+[[menu.main]]
+  name = "分类"
+  weight = 20
+  identifier = "categories"
+  url = "/categories/"
+[[menu.main]]
+  name = "标签"
+  weight = 30
+  identifier = "tags"
+  url = "/tags/"
+[[menu.main]]
+  name = "归档"
+  weight = 40
+  identifier = "archive"
+  url = "/archive/"
+[[menu.main]]
+  name = "关于"
+  weight = 50
+  identifier = "about"
+  url = "/about/"
+
+[taxonomies]
+  archive = "archive"
+  categories = "categories"
+  tags = "tags"
+  about = "about"
+
+[params]
+  custom_css = ["custom_css/style.css", "custom_css/github.css"]             # 是一个数组，可以存放多个文件名称。
+  # env = "production"                              # 发布网站的时候，要设置env的值为production。现在是development阶段，不要设置。因此将之注释掉。
+  siteBrand = "MyBrand"                             # .Site.Params.siteBrand
